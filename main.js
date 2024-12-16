@@ -1,5 +1,5 @@
 const Discord = require('discord.js')
-const config = require('./misc/config.json')
+const config = require('./config.json')
 const dbvrp = require('../dbvrp')
 
 const client = new Discord.Client({
@@ -20,4 +20,4 @@ client.on('messageCreate', (message) => {
     }
 })
 
-client.login('OTcwMTYyNDQ3MzY3NDM0MzQw.GKfanF.BvVDfGx_bfiXC7Hu9wn-bC2cbrS3J_klrF71Ok')
+client.login(config.token)
